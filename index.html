@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz om Stroke och Fysioterapi</title>
+  <style>
+    body {
+      background-image: url('quiz_background.png');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #333;
+      padding: 20px;
+    }
+    .quiz-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .question { font-weight: bold; }
+    .options { margin-top: 10px; }
+    .feedback { margin-top: 10px; font-weight: bold; }
+    .navigation { margin-top: 20px; }
+    button { padding: 10px 20px; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz om Stroke och Fysioterapi</h1>
+    <p>Välj ett eller två svarsalternativ för varje fråga. Klicka på "Nästa fråga" för att fortsätta.</p>
+    <div id="quiz"></div>
+    <div class="navigation">
+      <button onclick="startQuiz()">Starta quiz</button>
+      <button onclick="nextQuestion()">Nästa fråga</button>
+      <button onclick="endQuiz()">Avsluta quiz</button>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script>
+    let quizData = [];
+    let currentQuestion = 0;
+    let score = 0;
+    let incorrectSources = [];
+
+    async function loadQuizData() {
+      const response = await fetch('quiz_data.json');
+      quizData = await response.json();
+    }
+
+    function startQuiz() {
+      currentQuestion = 0;
+      score = 0;
+      incorrectSources = [];
+      showQuestion();
+    }
+
+    function showQuestion() {
+      const q = quizData[currentQuestion];
+      let html = `<div class="question">${q.question}</div><div class="options">`;
+      q.options.forEach((opt, idx) => {
+        html += `<label><input type="checkbox" name="option" value="${idx}"> ${opt}</label><br>`;
+      });
+      html += `</div><button onclick="submitAnswer()">Svara</button><div id="feedback" class="feedback"></div>`;
+      document.getElementById("quiz").innerHTML = html;
+    }
+
+    function submitAnswer() {
+      const selected = Array.from(document.querySelectorAll('input[name="option"]:checked')).map(el => parseInt(el.value));
+      const correct = quizData[currentQuestion].correct_answers;
+      const feedback = document.getElementById("feedback");
+      const isCorrect = selected.length === correct.length && selected.every(val => correct.includes(val));
+      if (isCorrect) {
+        score++;
+        feedback.innerHTML = "✅ Rätt! 🍬🍭🍫<br>" + quizData[currentQuestion].text_excerpt;
+      } else {
+        incorrectSources.push(quizData[currentQuestion].source);
+        feedback.innerHTML = "❌ Fel. Läs mer: " + quizData[currentQuestion].source + "<br>" + quizData[currentQuestion].text_excerpt;
+      }
+    }
+
+    function nextQuestion() {
+      if (currentQuestion < quizData.length - 1) {
+        currentQuestion++;
+        showQuestion();
+      } else {
+        endQuiz();
+      }
+    }
+
+    function endQuiz() {
+      let html = `<h2>Resultat</h2><p>Du fick ${score} av ${quizData.length} rätt.</p>`;
+      if (score === quizData.length) {
+        html += "<p>⭐ Fantastiskt! Du får en stjärna och godis! 🍬</p>";
+      } else {
+        html += "<p>📚 Läs mer i följande källor:</p><ul>";
+        incorrectSources.forEach(src => {
+          html += `<li>${src}</li>`;
+        });
+        html += "</ul>";
+      }
+      document.getElementById("result").innerHTML = html;
+    }
+
+    loadQuizData();
+  </script>
+</body>
+</html>
