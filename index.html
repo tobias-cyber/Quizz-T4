@@ -2,108 +2,116 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>Quiz om Stroke och Fysioterapi</title>
-  <style>
-    body {
-      background-image: url('quiz_background.png');
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      color: #333;
-      padding: 20px;
-    }
-    .quiz-container {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .question { font-weight: bold; }
-    .options { margin-top: 10px; }
-    .feedback { margin-top: 10px; font-weight: bold; }
-    .navigation { margin-top: 20px; }
-    button { padding: 10px 20px; margin-right: 10px; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Quiz om Fysioterapi</title>
+    <style>
+        body {
+            background-image: url('quiz_background.png');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+        #quiz-container {
+            background-color: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .options {
+            margin-bottom: 10px;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div class="quiz-container">
-    <h1>Quiz om Stroke och Fysioterapi</h1>
-    <p>Välj ett eller två svarsalternativ för varje fråga. Klicka på "Nästa fråga" för att fortsätta.</p>
-    <div id="quiz"></div>
-    <div class="navigation">
-      <button onclick="startQuiz()">Starta quiz</button>
-      <button onclick="nextQuestion()">Nästa fråga</button>
-      <button onclick="endQuiz()">Avsluta quiz</button>
+    <div id="quiz-container">
+        <h1>Quiz om Fysioterapi</h1>
+        <p>Välkommen! Klicka på "Starta quiz" för att börja. Du får feedback efter varje fråga och belöningar 🍬🍭🍫 för rätt svar!</p>
+        <div id="quiz"></div>
+        <div class="buttons">
+            <button onclick="startQuiz()">Starta quiz</button>
+            <button onclick="nextQuestion()">Nästa fråga</button>
+            <button onclick="endQuiz()">Avsluta quiz</button>
+        </div>
+        <div id="result"></div>
     </div>
-    <div id="result"></div>
-  </div>
-  <script>
-    let quizData = [];
-    let currentQuestion = 0;
-    let score = 0;
-    let incorrectSources = [];
+    <script>
+        let quizData = {};
+        let currentQuestion = 0;
+        let score = 0;
+        let incorrectSources = [];
 
-    async function loadQuizData() {
-      const response = await fetch('quiz_data.json');
-      quizData = await response.json();
-    }
+        async function loadQuizData() {
+            const response = await fetch('quiz_data.json');
+            quizData = await response.json();
+        }
 
-    function startQuiz() {
-      currentQuestion = 0;
-      score = 0;
-      incorrectSources = [];
-      showQuestion();
-    }
+        function startQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            incorrectSources = [];
+            showQuestion();
+        }
 
-    function showQuestion() {
-      const q = quizData[currentQuestion];
-      let html = `<div class="question">${q.question}</div><div class="options">`;
-      q.options.forEach((opt, idx) => {
-        html += `<label><input type="checkbox" name="option" value="${idx}"> ${opt}</label><br>`;
-      });
-      html += `</div><button onclick="submitAnswer()">Svara</button><div id="feedback" class="feedback"></div>`;
-      document.getElementById("quiz").innerHTML = html;
-    }
+        function showQuestion() {
+            const q = quizData[currentQuestion];
+            let html = `<div class="question">${q.question}</div><div class="options">`;
+            q.options.forEach((opt, i) => {
+                html += `<label><input type="checkbox" name="option" value="${i}"> ${opt}</label><br>`;
+            });
+            html += `</div><button onclick="submitAnswer()">Svara</button>`;
+            document.getElementById("quiz").innerHTML = html;
+        }
 
-    function submitAnswer() {
-      const selected = Array.from(document.querySelectorAll('input[name="option"]:checked')).map(el => parseInt(el.value));
-      const correct = quizData[currentQuestion].correct_answers;
-      const feedback = document.getElementById("feedback");
-      const isCorrect = selected.length === correct.length && selected.every(val => correct.includes(val));
-      if (isCorrect) {
-        score++;
-        feedback.innerHTML = "✅ Rätt! 🍬🍭🍫<br>" + quizData[currentQuestion].text_excerpt;
-      } else {
-        incorrectSources.push(quizData[currentQuestion].source);
-        feedback.innerHTML = "❌ Fel. Läs mer: " + quizData[currentQuestion].source + "<br>" + quizData[currentQuestion].text_excerpt;
-      }
-    }
+        function submitAnswer() {
+            const selected = Array.from(document.querySelectorAll('input[name="option"]:checked')).map(el => parseInt(el.value));
+            const correct = quizData[currentQuestion].correct_answers;
+            const isCorrect = correct.every(c => selected.includes(c)) && selected.every(s => correct.includes(s));
+            let feedback = isCorrect ? "Rätt! 🍬🍭🍫" : "Fel!";
+            if (!isCorrect) incorrectSources.push(quizData[currentQuestion].source);
+            if (isCorrect) score++;
+            feedback += `<br><div class="feedback">Textstycke: ${quizData[currentQuestion].text_snippet}</div>`;
+            document.getElementById("quiz").innerHTML += `<div class="feedback">${feedback}</div>`;
+        }
 
-    function nextQuestion() {
-      if (currentQuestion < quizData.length - 1) {
-        currentQuestion++;
-        showQuestion();
-      } else {
-        endQuiz();
-      }
-    }
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion < quizData.length) {
+                showQuestion();
+            } else {
+                endQuiz();
+            }
+        }
 
-    function endQuiz() {
-      let html = `<h2>Resultat</h2><p>Du fick ${score} av ${quizData.length} rätt.</p>`;
-      if (score === quizData.length) {
-        html += "<p>⭐ Fantastiskt! Du får en stjärna och godis! 🍬</p>";
-      } else {
-        html += "<p>📚 Läs mer i följande källor:</p><ul>";
-        incorrectSources.forEach(src => {
-          html += `<li>${src}</li>`;
-        });
-        html += "</ul>";
-      }
-      document.getElementById("result").innerHTML = html;
-    }
+        function endQuiz() {
+            let html = `<h2>Quiz avslutat!</h2><p>Du fick ${score} av ${quizData.length} rätt.</p>`;
+            if (score === quizData.length) {
+                html += "<p>⭐ Du fick alla rätt! Här är din belöning: 🍬🍭🍫</p>";
+            } else {
+                html += "<p>Du behöver läsa mer i följande källor:</p><ul>";
+                [...new Set(incorrectSources)].forEach(src => {
+                    html += `<li>${src}</li>`;
+                });
+                html += "</ul>";
+            }
+            document.getElementById("result").innerHTML = html;
+        }
 
-    loadQuizData();
-  </script>
+        loadQuizData();
+    </script>
 </body>
 </html>

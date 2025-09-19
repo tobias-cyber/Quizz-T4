@@ -1,622 +1,292 @@
 [
   {
-    "id": 1,
-    "question": "Vad beskriver bäst innehållet i fråga 1?",
+    "question": "Vilken typ av rörelsemönster är vanlig hos patienter med hemipares efter stroke?",
     "options": [
-      "Alternativ A för fråga 1",
-      "Alternativ B för fråga 1",
-      "Alternativ C för fråga 1",
-      "Alternativ D för fråga 1"
+      "Fullständig isolerad ledrörelse i alla riktningar",
+      "Ett obegränsat antal rörelsekombinationer",
+      "Begränsning till några få stereotypa synergier",
+      "Spontan återgång till normal motorik inom 24 timmar"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "source": "Motorik Stroke.pdf",
+    "text_snippet": "Patienter med hemipares efter stroke har ofta begränsning till några få stereotypa synergier."
+  },
+  {
+    "question": "Vad innebär det att en patient har svårt att aktivera muskelgrupper i andra rörelsekombinationer än de stereotypa?",
+    "options": [
+      "Patienten har god finmotorik",
+      "Patienten har biomekaniska begränsningar och ökad tonus",
+      "Patienten har normal rörelseprecision",
+      "Patienten har förlorat all muskelstyrka"
     ],
     "correct_answers": [
       1
     ],
-    "source": "Källa: Dokument 1, sida 1",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 1."
+    "source": "Motorik Stroke.pdf",
+    "text_snippet": "Svårighet att aktivera muskelgrupper i andra rörelsekombinationer än de stereotypa beror på biomekaniska begränsningar och ökad tonus."
   },
   {
-    "id": 2,
-    "question": "Vad beskriver bäst innehållet i fråga 2?",
+    "question": "Vilken metod används för att beskriva motorisk funktion hos patienter med hemipares?",
     "options": [
-      "Alternativ A för fråga 2",
-      "Alternativ B för fråga 2",
-      "Alternativ C för fråga 2",
-      "Alternativ D för fråga 2"
+      "Att mäta blodtryck under rörelse",
+      "Att observera förmågan att utföra isolerade ledrörelser och förekomst av tonusökning",
+      "Att registrera hjärnaktivitet med EEG",
+      "Att mäta muskelmassa med bioimpedans"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "source": "Motorik Stroke.pdf",
+    "text_snippet": "Motorisk funktion beskrivs genom observation av förmågan att utföra isolerade ledrörelser och förekomst av tonusökning."
+  },
+  {
+    "question": "Vilken typ av träning rekommenderas vid mindre uttalad nedsättning av volontär rörelseförmåga i övre extremitet efter stroke?",
+    "options": [
+      "Endast passiva rörelser",
+      "Funktionella ADL-övningar med varierande tyngd och hastighet",
+      "Immobilisering av armen",
+      "Träning med enbart den friska armen"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "source": "Övre Extremitet vid Stroke.pdf",
+    "text_snippet": "Vid mindre uttalad nedsättning rekommenderas funktionella ADL-övningar med varierande tyngd och hastighet."
+  },
+  {
+    "question": "Vad är syftet med att använda kompressionshandske vid svullnad i handen efter stroke?",
+    "options": [
+      "Att minska muskelstyrka",
+      "Att öka blodtrycket",
+      "Att motverka svullnad och förbättra cirkulation",
+      "Att immobilisera handen permanent"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "source": "Övre Extremitet vid Stroke.pdf",
+    "text_snippet": "Kompressionshandske används för att motverka svullnad och förbättra cirkulation."
+  },
+  {
+    "question": "Vilken typ av tonusökning är hastighetsberoende och ses vid skada på övre motorneuron?",
+    "options": [
+      "Rigiditet",
+      "Paratoni",
+      "Spasticitet",
+      "Dystoni"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "source": "Muskulär hypertonus HT24 ny.pdf",
+    "text_snippet": "Spasticitet är en hastighetsberoende tonusökning som ses vid skada på övre motorneuron."
+  },
+  {
+    "question": "Vad innebär patologisk kokontraktion vid stroke?",
+    "options": [
+      "Att antagonisten är helt inaktiv",
+      "Att agonist och antagonist aktiveras samtidigt vid försök till rörelse",
+      "Att patienten har normal muskelkoordination",
+      "Att rörelsen sker utan muskelaktivering"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "source": "Muskulär hypertonus HT24 ny.pdf",
+    "text_snippet": "Patologisk kokontraktion innebär att agonist och antagonist aktiveras samtidigt vid försök till rörelse."
+  },
+  {
+    "question": "Vilken komponent bidrar till att muskeln känns kort och stel vid spasticitet?",
+    "options": [
+      "Ökad blodgenomströmning",
+      "Förändring i muskelns mekaniska-elastiska egenskaper",
+      "Minskad bindväv",
+      "Ökad muskelmassa"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "source": "Muskulär hypertonus HT24 ny.pdf",
+    "text_snippet": "Förändring i muskelns mekaniska-elastiska egenskaper bidrar till att muskeln känns kort och stel vid spasticitet."
+  },
+  {
+    "question": "Vilken metod används för att bedöma graden av spasticitet i kliniken?",
+    "options": [
+      "EMG",
+      "Modified Ashworth Scale",
+      "MRI",
+      "Muskelbiopsi"
+    ],
+    "correct_answers": [
+      1
+    ],
+    "source": "Muskulär hypertonus HT24 ny.pdf",
+    "text_snippet": "Modified Ashworth Scale används för att bedöma graden av spasticitet i kliniken."
+  },
+  {
+    "question": "Vilken fysioterapeutisk åtgärd kan minska hypertonus och förbättra funktion vid spasticitet?",
+    "options": [
+      "Immobilisering i rullstol",
+      "Serial casting utan uppföljning",
+      "Funktionell elektrisk stimulering och fysisk aktivitet",
+      "Total vila från all rörelse"
+    ],
+    "correct_answers": [
+      2
+    ],
+    "source": "Muskulär hypertonus HT24 ny.pdf",
+    "text_snippet": "Funktionell elektrisk stimulering och fysisk aktivitet kan minska hypertonus och förbättra funktion vid spasticitet."
+  },
+  {
+    "question": "Exempelfråga 11: Vad är korrekt angående fysioterapi?",
+    "options": [
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 2, sida 2",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 2."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 3,
-    "question": "Vad beskriver bäst innehållet i fråga 3?",
+    "question": "Exempelfråga 12: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 3",
-      "Alternativ B för fråga 3",
-      "Alternativ C för fråga 3",
-      "Alternativ D för fråga 3"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 3, sida 3",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 3."
-  },
-  {
-    "id": 4,
-    "question": "Vad beskriver bäst innehållet i fråga 4?",
-    "options": [
-      "Alternativ A för fråga 4",
-      "Alternativ B för fråga 4",
-      "Alternativ C för fråga 4",
-      "Alternativ D för fråga 4"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 4, sida 4",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 4."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 5,
-    "question": "Vad beskriver bäst innehållet i fråga 5?",
+    "question": "Exempelfråga 13: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 5",
-      "Alternativ B för fråga 5",
-      "Alternativ C för fråga 5",
-      "Alternativ D för fråga 5"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 5, sida 5",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 5."
-  },
-  {
-    "id": 6,
-    "question": "Vad beskriver bäst innehållet i fråga 6?",
-    "options": [
-      "Alternativ A för fråga 6",
-      "Alternativ B för fråga 6",
-      "Alternativ C för fråga 6",
-      "Alternativ D för fråga 6"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 1, sida 6",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 6."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 7,
-    "question": "Vad beskriver bäst innehållet i fråga 7?",
+    "question": "Exempelfråga 14: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 7",
-      "Alternativ B för fråga 7",
-      "Alternativ C för fråga 7",
-      "Alternativ D för fråga 7"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 2, sida 7",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 7."
-  },
-  {
-    "id": 8,
-    "question": "Vad beskriver bäst innehållet i fråga 8?",
-    "options": [
-      "Alternativ A för fråga 8",
-      "Alternativ B för fråga 8",
-      "Alternativ C för fråga 8",
-      "Alternativ D för fråga 8"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 3, sida 8",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 8."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 9,
-    "question": "Vad beskriver bäst innehållet i fråga 9?",
+    "question": "Exempelfråga 15: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 9",
-      "Alternativ B för fråga 9",
-      "Alternativ C för fråga 9",
-      "Alternativ D för fråga 9"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 4, sida 9",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 9."
-  },
-  {
-    "id": 10,
-    "question": "Vad beskriver bäst innehållet i fråga 10?",
-    "options": [
-      "Alternativ A för fråga 10",
-      "Alternativ B för fråga 10",
-      "Alternativ C för fråga 10",
-      "Alternativ D för fråga 10"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 5, sida 10",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 10."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 11,
-    "question": "Vad beskriver bäst innehållet i fråga 11?",
+    "question": "Exempelfråga 16: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 11",
-      "Alternativ B för fråga 11",
-      "Alternativ C för fråga 11",
-      "Alternativ D för fråga 11"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 1, sida 1",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 11."
-  },
-  {
-    "id": 12,
-    "question": "Vad beskriver bäst innehållet i fråga 12?",
-    "options": [
-      "Alternativ A för fråga 12",
-      "Alternativ B för fråga 12",
-      "Alternativ C för fråga 12",
-      "Alternativ D för fråga 12"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 2, sida 2",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 12."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 13,
-    "question": "Vad beskriver bäst innehållet i fråga 13?",
+    "question": "Exempelfråga 17: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 13",
-      "Alternativ B för fråga 13",
-      "Alternativ C för fråga 13",
-      "Alternativ D för fråga 13"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 3, sida 3",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 13."
-  },
-  {
-    "id": 14,
-    "question": "Vad beskriver bäst innehållet i fråga 14?",
-    "options": [
-      "Alternativ A för fråga 14",
-      "Alternativ B för fråga 14",
-      "Alternativ C för fråga 14",
-      "Alternativ D för fråga 14"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 4, sida 4",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 14."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 15,
-    "question": "Vad beskriver bäst innehållet i fråga 15?",
+    "question": "Exempelfråga 18: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 15",
-      "Alternativ B för fråga 15",
-      "Alternativ C för fråga 15",
-      "Alternativ D för fråga 15"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 5, sida 5",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 15."
-  },
-  {
-    "id": 16,
-    "question": "Vad beskriver bäst innehållet i fråga 16?",
-    "options": [
-      "Alternativ A för fråga 16",
-      "Alternativ B för fråga 16",
-      "Alternativ C för fråga 16",
-      "Alternativ D för fråga 16"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 1, sida 6",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 16."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 17,
-    "question": "Vad beskriver bäst innehållet i fråga 17?",
+    "question": "Exempelfråga 19: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 17",
-      "Alternativ B för fråga 17",
-      "Alternativ C för fråga 17",
-      "Alternativ D för fråga 17"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 2, sida 7",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 17."
-  },
-  {
-    "id": 18,
-    "question": "Vad beskriver bäst innehållet i fråga 18?",
-    "options": [
-      "Alternativ A för fråga 18",
-      "Alternativ B för fråga 18",
-      "Alternativ C för fråga 18",
-      "Alternativ D för fråga 18"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 3, sida 8",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 18."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   },
   {
-    "id": 19,
-    "question": "Vad beskriver bäst innehållet i fråga 19?",
+    "question": "Exempelfråga 20: Vad är korrekt angående fysioterapi?",
     "options": [
-      "Alternativ A för fråga 19",
-      "Alternativ B för fråga 19",
-      "Alternativ C för fråga 19",
-      "Alternativ D för fråga 19"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 4, sida 9",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 19."
-  },
-  {
-    "id": 20,
-    "question": "Vad beskriver bäst innehållet i fråga 20?",
-    "options": [
-      "Alternativ A för fråga 20",
-      "Alternativ B för fråga 20",
-      "Alternativ C för fråga 20",
-      "Alternativ D för fråga 20"
+      "Alternativ A",
+      "Alternativ B",
+      "Alternativ C",
+      "Alternativ D"
     ],
     "correct_answers": [
       0,
       2
     ],
-    "source": "Källa: Dokument 5, sida 10",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 20."
-  },
-  {
-    "id": 21,
-    "question": "Vad beskriver bäst innehållet i fråga 21?",
-    "options": [
-      "Alternativ A för fråga 21",
-      "Alternativ B för fråga 21",
-      "Alternativ C för fråga 21",
-      "Alternativ D för fråga 21"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 1, sida 1",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 21."
-  },
-  {
-    "id": 22,
-    "question": "Vad beskriver bäst innehållet i fråga 22?",
-    "options": [
-      "Alternativ A för fråga 22",
-      "Alternativ B för fråga 22",
-      "Alternativ C för fråga 22",
-      "Alternativ D för fråga 22"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 2, sida 2",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 22."
-  },
-  {
-    "id": 23,
-    "question": "Vad beskriver bäst innehållet i fråga 23?",
-    "options": [
-      "Alternativ A för fråga 23",
-      "Alternativ B för fråga 23",
-      "Alternativ C för fråga 23",
-      "Alternativ D för fråga 23"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 3, sida 3",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 23."
-  },
-  {
-    "id": 24,
-    "question": "Vad beskriver bäst innehållet i fråga 24?",
-    "options": [
-      "Alternativ A för fråga 24",
-      "Alternativ B för fråga 24",
-      "Alternativ C för fråga 24",
-      "Alternativ D för fråga 24"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 4, sida 4",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 24."
-  },
-  {
-    "id": 25,
-    "question": "Vad beskriver bäst innehållet i fråga 25?",
-    "options": [
-      "Alternativ A för fråga 25",
-      "Alternativ B för fråga 25",
-      "Alternativ C för fråga 25",
-      "Alternativ D för fråga 25"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 5, sida 5",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 25."
-  },
-  {
-    "id": 26,
-    "question": "Vad beskriver bäst innehållet i fråga 26?",
-    "options": [
-      "Alternativ A för fråga 26",
-      "Alternativ B för fråga 26",
-      "Alternativ C för fråga 26",
-      "Alternativ D för fråga 26"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 1, sida 6",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 26."
-  },
-  {
-    "id": 27,
-    "question": "Vad beskriver bäst innehållet i fråga 27?",
-    "options": [
-      "Alternativ A för fråga 27",
-      "Alternativ B för fråga 27",
-      "Alternativ C för fråga 27",
-      "Alternativ D för fråga 27"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 2, sida 7",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 27."
-  },
-  {
-    "id": 28,
-    "question": "Vad beskriver bäst innehållet i fråga 28?",
-    "options": [
-      "Alternativ A för fråga 28",
-      "Alternativ B för fråga 28",
-      "Alternativ C för fråga 28",
-      "Alternativ D för fråga 28"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 3, sida 8",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 28."
-  },
-  {
-    "id": 29,
-    "question": "Vad beskriver bäst innehållet i fråga 29?",
-    "options": [
-      "Alternativ A för fråga 29",
-      "Alternativ B för fråga 29",
-      "Alternativ C för fråga 29",
-      "Alternativ D för fråga 29"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 4, sida 9",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 29."
-  },
-  {
-    "id": 30,
-    "question": "Vad beskriver bäst innehållet i fråga 30?",
-    "options": [
-      "Alternativ A för fråga 30",
-      "Alternativ B för fråga 30",
-      "Alternativ C för fråga 30",
-      "Alternativ D för fråga 30"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 5, sida 10",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 30."
-  },
-  {
-    "id": 31,
-    "question": "Vad beskriver bäst innehållet i fråga 31?",
-    "options": [
-      "Alternativ A för fråga 31",
-      "Alternativ B för fråga 31",
-      "Alternativ C för fråga 31",
-      "Alternativ D för fråga 31"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 1, sida 1",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 31."
-  },
-  {
-    "id": 32,
-    "question": "Vad beskriver bäst innehållet i fråga 32?",
-    "options": [
-      "Alternativ A för fråga 32",
-      "Alternativ B för fråga 32",
-      "Alternativ C för fråga 32",
-      "Alternativ D för fråga 32"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 2, sida 2",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 32."
-  },
-  {
-    "id": 33,
-    "question": "Vad beskriver bäst innehållet i fråga 33?",
-    "options": [
-      "Alternativ A för fråga 33",
-      "Alternativ B för fråga 33",
-      "Alternativ C för fråga 33",
-      "Alternativ D för fråga 33"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 3, sida 3",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 33."
-  },
-  {
-    "id": 34,
-    "question": "Vad beskriver bäst innehållet i fråga 34?",
-    "options": [
-      "Alternativ A för fråga 34",
-      "Alternativ B för fråga 34",
-      "Alternativ C för fråga 34",
-      "Alternativ D för fråga 34"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 4, sida 4",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 34."
-  },
-  {
-    "id": 35,
-    "question": "Vad beskriver bäst innehållet i fråga 35?",
-    "options": [
-      "Alternativ A för fråga 35",
-      "Alternativ B för fråga 35",
-      "Alternativ C för fråga 35",
-      "Alternativ D för fråga 35"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 5, sida 5",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 35."
-  },
-  {
-    "id": 36,
-    "question": "Vad beskriver bäst innehållet i fråga 36?",
-    "options": [
-      "Alternativ A för fråga 36",
-      "Alternativ B för fråga 36",
-      "Alternativ C för fråga 36",
-      "Alternativ D för fråga 36"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 1, sida 6",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 36."
-  },
-  {
-    "id": 37,
-    "question": "Vad beskriver bäst innehållet i fråga 37?",
-    "options": [
-      "Alternativ A för fråga 37",
-      "Alternativ B för fråga 37",
-      "Alternativ C för fråga 37",
-      "Alternativ D för fråga 37"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 2, sida 7",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 37."
-  },
-  {
-    "id": 38,
-    "question": "Vad beskriver bäst innehållet i fråga 38?",
-    "options": [
-      "Alternativ A för fråga 38",
-      "Alternativ B för fråga 38",
-      "Alternativ C för fråga 38",
-      "Alternativ D för fråga 38"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 3, sida 8",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 38."
-  },
-  {
-    "id": 39,
-    "question": "Vad beskriver bäst innehållet i fråga 39?",
-    "options": [
-      "Alternativ A för fråga 39",
-      "Alternativ B för fråga 39",
-      "Alternativ C för fråga 39",
-      "Alternativ D för fråga 39"
-    ],
-    "correct_answers": [
-      1
-    ],
-    "source": "Källa: Dokument 4, sida 9",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 39."
-  },
-  {
-    "id": 40,
-    "question": "Vad beskriver bäst innehållet i fråga 40?",
-    "options": [
-      "Alternativ A för fråga 40",
-      "Alternativ B för fråga 40",
-      "Alternativ C för fråga 40",
-      "Alternativ D för fråga 40"
-    ],
-    "correct_answers": [
-      0,
-      2
-    ],
-    "source": "Källa: Dokument 5, sida 10",
-    "text_excerpt": "Textstycke som stödjer rätt svar för fråga 40."
+    "source": "Arbetsmaterial metodik neuro Fysioterapi 4 HT24.docx",
+    "text_snippet": "Fysioterapi innebär att använda evidensbaserade metoder för att förbättra funktion och livskvalitet."
   }
 ]
